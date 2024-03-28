@@ -8,7 +8,8 @@ Download raw data from : https://cricsheet.org/matches/
 ## How to train the model
 1. create and activate a new conda/virtual env
 2. install all deps in the env from requirements.txt
-2. run : `python model_workflow.py`
+3. set use JAVA8 in JAVA_HOME
+4. run : `python model_workflow.py`
 
 ## How to predict fantasy points for a given dt, venue and set of players
 1. Activate the env used while model training
