@@ -10,7 +10,7 @@ def download_and_unzip_historical_data():
     subprocess.run(clear_command.split(" "))
     download_command = "wget --directory-prefix downloads https://cricsheet.org/downloads/all_json.zip"
     subprocess.run(download_command.split(" "))
-    unzip_command = "unzip all_json.zip -d %s"%(raw_data_dowload_path)
+    unzip_command = "unzip downloads/all_json.zip -d %s"%(raw_data_dowload_path)
     subprocess.run(unzip_command.split(" "))
 
 def download_and_unzip_incremental_data():
